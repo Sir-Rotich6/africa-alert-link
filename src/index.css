@@ -2,41 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* AlertBridge Design System - Optimized for emergency response and African communities */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base colors for clean, professional emergency interface */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* AlertBridge primary - professional blue for trust and reliability */
+    --primary: 210 85% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 210 85% 65%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - warm earth tone inspired by African landscapes */
+    --secondary: 25 35% 85%;
+    --secondary-foreground: 25 45% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 20% 94%;
+    --muted-foreground: 215 15% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - warm orange for alerts and calls to action */
+    --accent: 25 85% 55%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Alert colors for emergency system */
+    --warning: 45 95% 55%;
+    --warning-foreground: 45 45% 15%;
+    
+    --success: 140 65% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --danger: 0 85% 55%;
+    --danger-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 85% 55%;
+    --destructive-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    --border: 215 20% 88%;
+    --input: 215 20% 88%;
+    --ring: 210 85% 45%;
+
+    --radius: 0.75rem;
+
+    /* Gradients for engaging emergency interfaces */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-alert: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--warning)));
+    --gradient-success: linear-gradient(135deg, hsl(var(--success)), hsl(140 65% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+
+    /* Shadows for depth and urgency */
+    --shadow-alert: 0 10px 30px -10px hsl(var(--accent) / 0.3);
+    --shadow-primary: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-soft: 0 4px 12px -2px hsl(var(--foreground) / 0.08);
+
+    /* Animation timing for emergency responsiveness */
+    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
